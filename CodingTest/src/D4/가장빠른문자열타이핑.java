@@ -17,5 +17,5 @@ public class 가장빠른문자열타이핑 {
                 System.out.println("#" + tc + " " + A.length());
         }
 	}
-
+	
 }
