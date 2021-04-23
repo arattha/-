@@ -22,10 +22,6 @@ public class 다리놓기 {
 				dp[i][j] = dp[i - 1][j - 1] + dp[i][j-1];
 			}
 		}
-//        
-//        for (int i = 1; i < dp.length; i++) {
-//			System.out.println(Arrays.toString(dp[i]));
-//		}
 		
 		int T = in.nextInt();
 	
