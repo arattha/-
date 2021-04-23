@@ -27,21 +27,18 @@ public class 보호필름 {
 					film[i][j] = sc.nextInt();
 				}
 			}
+
 			if(K==1) {//무조건 통과
 				System.out.println("#"+tc+" "+0);
 			}
 			else {
+				
 				exit = false;
 				res = 987654321;
 				sel = new int[D];
 				Arrays.fill(sel, -1);
-				
-//				if(filmTest()) {//약품없이 테스트
-//					exit = true;
-//					res = 0;
-//				};
-				
-				for (int i = 0; i < D; i++) {
+		
+				for (int i = 0; i <= K; i++) {
 					//점점 약품수를 늘리자.
 					powerSet(0,0,i);
 				}
@@ -53,6 +50,7 @@ public class 보호필름 {
 
 	private static void powerSet(int idx,int cnt,int end) {
 		if(exit) return; //한번이라도 성공했다면 더이상 볼필요 없다 다 꺼라.
+		
 		if(cnt == end) {//적게 넣는 것부터 시작한다. 약품을 투입할 경우의 수를 확정했다.
 			//System.out.println(Arrays.toString(sel));
 			if(filmTest()) {
@@ -71,11 +69,13 @@ public class 보호필름 {
 	}
 	
 	private static boolean filmTest() {
+		
 		boolean flag = true;//맨처음은 해야하니 true로 초기화
+		
 		for (int i = 0; i < W; i++) {
 			if(!flag) break; //한번이라도 실패하면 더 이상 루프를 반복할 필요가 없다.
-			
-			int prev = film[0][i];
+				
+			int prev = film[0][i];		
 			int cnt = 0;
 			flag = false;
 			
