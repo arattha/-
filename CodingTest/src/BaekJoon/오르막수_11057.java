@@ -2,7 +2,7 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-public class 오르막_11057 {
+public class 오르막수_11057 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
