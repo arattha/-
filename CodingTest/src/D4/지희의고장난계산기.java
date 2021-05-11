@@ -26,7 +26,8 @@ public class 지희의고장난계산기 {
 //			for (int i = 0; i <= 60; i++) {
 //				System.out.print(dp[i]+" ");
 //			}
-//			System.out.println();
+//			System.out.println();     
+			
 			System.out.print("#"+tc+" ");
 			System.out.println(dp[N] == Integer.MAX_VALUE ? -1 : dp[N]+1);
 		}
@@ -39,7 +40,7 @@ public class 지희의고장난계산기 {
 		dp[tempN] = cal(tempN);//직접 누른거 안눌리면 최댓값
 		
 		for (int i = 1; i*i <= tempN; i++) {
-			if(tempN%i == 0) {
+			if(tempN%i == 0) {  
 				int a = factorization(i);//인수분해 시도
 				int b = factorization(tempN/i);
 				int temp = Integer.MAX_VALUE;
@@ -52,8 +53,11 @@ public class 지희의고장난계산기 {
 		
 		return dp[tempN];
 	}
-	
+	// 0은 아직안한거
+ 	// max 안눌리는거
+	// 값 도달하는수
 	public static int cal(int tempN) {//무조건 직접 누르는게 이득
+		//6 0
 		int t = tempN;
 		int cnt = 0;
 		while(t != 0) {

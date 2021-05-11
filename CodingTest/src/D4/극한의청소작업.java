@@ -12,11 +12,14 @@ public class 극한의청소작업 {
 			dp[0][i] = i;
 			if(i < 4) dp[0][i]++; 
 		}
+		
 		for (int i = 1; i < 12; i++) {
 			for (int j = 0; j <10; j++) {
 				dp[i][j] = dp[0][j] * dp[i-1][9];
 			}
 		}
+				
+		
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
 		
@@ -66,6 +69,7 @@ public class 극한의청소작업 {
 				cnt++;
 				b /= 10;
 			}
+			
 			
 			if(A < 0 && B > 0)
 				System.out.println("#"+tc+" "+(aRes+bRes-3));
