@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class 적록색약 {
+public class 적록색약_10026 {
 	
 	static int N;
 	static char map[][];
