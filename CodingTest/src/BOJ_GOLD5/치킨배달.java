@@ -47,7 +47,7 @@ public class 치킨배달 {
 			}
 		}
 		comb(0,0);
-		System.out.println(res);
+		System.out.println(res); //최대 M개
 	}
 
 	private static void comb(int cnt, int start) {

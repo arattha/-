@@ -126,7 +126,9 @@ public class 테트로미노_14500 {
 				map[i+3][j+3] = Integer.parseInt(st.nextToken());
 			}
 		}
+		
 		int res = 0;
+		
 		for (int i = 0; i < N+6; i++) {
 			for (int j = 0; j < M+6; j++) {
 				
