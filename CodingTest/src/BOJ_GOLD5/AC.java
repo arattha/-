@@ -15,10 +15,10 @@ public class AC {
 		
 		
 		loop : for (int tc = 1; tc <= T; tc++) {
-			
 			String order = sc.next();
 			int size = sc.nextInt();
 			String str = sc.next();
+			
 			String num[] = str.substring(1,str.length() - 1).split(",");
 			int arr[] = new int[size];
 			for (int i = 0; i < size; i++) {
