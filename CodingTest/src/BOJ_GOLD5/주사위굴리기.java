@@ -47,8 +47,6 @@ public class 주사위굴리기 {
 	 
     public static void changeDice(int d) {
         int[] temp = dice.clone();
-        // 6 밑면, 1 윗면
-        // 동쪽은 1, 서쪽은 2, 북쪽은 3, 남쪽은 4
         if (d == 1) {
             dice[1] = temp[4];
             dice[3] = temp[1];
