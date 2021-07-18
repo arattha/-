@@ -28,7 +28,7 @@ public class 숫자고르기_2668 {
             visited[i] = false;
         }
         
-        Collections.sort(list); //작은 수 부터 출력하므로 정렬한다.
+        Collections.sort(list);
         System.out.println(list.size());
         for(int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
@@ -41,7 +41,7 @@ public class 숫자고르기_2668 {
             dfs(arr[start], target);
             visited[arr[start]] = false;
         }
-        if(arr[start] == target) list.add(target); //사이클 발생시 해당 숫자를 list에 담아준다.
+        if(arr[start] == target) list.add(target); 
     }
 
 		
