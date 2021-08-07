@@ -60,8 +60,7 @@ public class 스도쿠 {
 					arr.get(k).t[map[i][j]] = true;
 				}
 			}
-		}
-		
+		}		
 	}
 	
 	private static void dfs(int cnt) {
