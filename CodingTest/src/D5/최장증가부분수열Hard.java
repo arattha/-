@@ -14,8 +14,8 @@ public class 최장증가부분수열Hard {
 		for (int tc = 1; tc <= T; tc++) {
 			int N = sc.nextInt();
 			
-			int[] arr = new int[N]; 
-			int[] LIS = new int[N]; //각 위치가 LIS의 길이
+			int[] arr = new int[N + 1]; 
+			int[] LIS = new int[N + 1]; //각 위치가 LIS의 길이
 			// 접근 1 현재 원소에서 이전  최장 길이 원소들을 전부 검색하며 최대 크기를 찾아 저장.
 			
 			for (int i = 1; i < N; i++) {

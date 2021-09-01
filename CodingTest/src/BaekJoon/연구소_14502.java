@@ -10,13 +10,14 @@ public class 연구소_14502 {
 	static int[][] map;
 	static int[][] map2;
 	static int res;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
 		N = sc.nextInt();
 		M = sc.nextInt();
-		res=0;
+		res= 0;
 		map = new int[N][M];
 		map2 = new int[N][M];
 		for (int i = 0; i < N; i++) {

@@ -28,7 +28,7 @@ public class 부분합 {
 		int res = Integer.MAX_VALUE;
 		while(true) {
 			
-			if(sum >= S) {//s보다 작으면
+			if(sum >= S) {
 				sum -= arr[left];
 				res = Math.min(res, (right-left));
 				left++;
